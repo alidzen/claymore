@@ -1,0 +1,319 @@
+/* Compass */
+/* Utilities */
+/* ==========================================================================
+   Site settings.
+   ========================================================================== */
+/* Typograthy */
+/* Colors */
+/* Colors for buttons and border */
+/* Colors for bg */
+/**/
+/* Positioning */
+/* ==========================================================================
+   Utilities.
+   ========================================================================== */
+/* line 88, icons/*.png */
+.icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-responsive, .icons-statistic {
+  background-image: url('/img/icons-s852293ce9a.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-browser {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-btn-choose {
+  background-position: 0 -85px;
+}
+
+/* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-face {
+  background-position: 0 -117px;
+}
+
+/* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-heart {
+  background-position: 0 -273px;
+}
+
+/* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-responsive {
+  background-position: 0 -359px;
+}
+
+/* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-statistic {
+  background-position: 0 -444px;
+}
+
+/* line 8, ../sass/utilities/_utilities.scss */
+.icons-heart,
+.icons-responsive,
+.icons-browser {
+  display: block;
+  height: 85px;
+  width: 99px;
+}
+
+/* line 16, ../sass/utilities/_utilities.scss */
+.icons-face {
+  display: block;
+  width: 142px;
+  height: 156px;
+}
+
+/* line 22, ../sass/utilities/_utilities.scss */
+.icons-statistic {
+  width: 238px;
+  height: 144px;
+}
+
+/* Bootstrap or another */
+/* I Used Susy */
+/* Base */
+/* line 5, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* ==========================================================================
+   Base styles.
+   ========================================================================== */
+/* line 5, ../sass/base/_base.scss */
+h1 {
+  font-size: 72px;
+  line-height: 30px;
+}
+
+/* h1 - use only for logo */
+/* Use in header-propose and feateres */
+/* line 12, ../sass/base/_base.scss */
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: baseline;
+}
+
+/* Use in sec. About us */
+/* line 19, ../sass/base/_base.scss */
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* Use in sec. service */
+/* line 25, ../sass/base/_base.scss */
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Use in sec. Testimonials*/
+/* line 31, ../sass/base/_base.scss */
+h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* line 36, ../sass/base/_base.scss */
+h6 {
+  font-size: 48px;
+  line-height: 30px;
+}
+
+/* line 41, ../sass/base/_base.scss */
+a {
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+}
+/* line 46, ../sass/base/_base.scss */
+a:active {
+  color: #fff;
+}
+
+/* line 51, ../sass/base/_base.scss */
+li {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Ie8 styles.
+   ========================================================================== */
+/* Fonts */
+@font-face {
+  /* Main fonts */
+  font-family: "OpenSansRegular";
+  src: url("/fonts/opensans-regular.eot");
+  src: url("/fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans-regular.woff") format("woff"), url("/fonts/opensans-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  /* Logo fonts only */
+  font-family: "Bles";
+  src: url(/fonts/BLESD___%20.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Layout */
+/* ==========================================================================
+   Header styles
+   ========================================================================== */
+/* mean layout header */
+/* ==========================================================================
+   Navigation styles.
+   ========================================================================== */
+/* mean layout navigation*/
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+/* mean layout main */
+/* ==========================================================================
+   Footer styles.
+   ========================================================================== */
+/* Modules */
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
+/* line 5, ../sass/modules/_btn.scss */
+.btn, .btn-blue {
+  display: block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 57px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: 18px;
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+/* line 24, ../sass/modules/_btn.scss */
+.btn-blue {
+  background-color: #3498db;
+}
+
+/* ==========================================================================
+   Dividers styles.
+   ========================================================================== */
+/* ==========================================================================
+   Form styles.
+   ========================================================================== */
+/* line 5, ../sass/modules/_forms.scss */
+.contact-name,
+.contact-mail,
+.contact-subject,
+.contact-message {
+  color: #fff;
+  background-color: #5d6d7e;
+  box-sizing: border-box;
+  height: 43px;
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 28px;
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+/* line 21, ../sass/modules/_forms.scss */
+.contact-name,
+.contact-mail {
+  width: 220px;
+}
+
+/* line 26, ../sass/modules/_forms.scss */
+.contact-subject {
+  width: 460px;
+  position: relative;
+}
+/* line 30, ../sass/modules/_forms.scss */
+.contact-subject:after {
+  content: '';
+  position: absolute;
+  background: url(/img/icons-s852293ce9a.png) no-repeat 0 -85px;
+  width: 37px;
+  height: 32px;
+  outline: 2px solid red;
+}
+
+/* line 41, ../sass/modules/_forms.scss */
+.contact-message {
+  width: 460px;
+  height: 150px;
+}
+
+/* ==========================================================================
+   Table styles.
+   ========================================================================== */
+/* ==========================================================================
+   Other styles.
+   ========================================================================== */
+/* Theme */
+/* ==========================================================================
+   Theme styles.
+   ========================================================================== */

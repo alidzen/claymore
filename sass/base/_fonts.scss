@@ -1,0 +1,16 @@
+@font-face {
+  /* Main fonts */
+  font-family: "OpenSansRegular";
+  src: url("/fonts/opensans-regular.eot");
+  src: url("/fonts/opensans-regular.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/opensans-regular.woff") format("woff"),
+       url("/fonts/opensans-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  
+  /* Logo fonts only */
+  font-family: "Bles";
+  src: url(/fonts/BLESD___%20.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

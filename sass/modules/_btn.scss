@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
+
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 57px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: $color-green;
+  color: $color-white;
+  
+  font: {
+    size: 18px;
+    family: $font-main;
+  }
+  
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-blue {
+  @extend .btn;
+  
+  background-color: $color-blue;
+}
+

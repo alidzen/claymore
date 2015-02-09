@@ -1,0 +1,53 @@
+/* ==========================================================================
+   Base styles.
+   ========================================================================== */
+
+h1 {
+  font-size: 72px; 
+  line-height: 30px; 
+}
+/* h1 - use only for logo */
+
+/* Use in header-propose and feateres */
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: baseline;
+}
+
+/* Use in sec. About us */
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* Use in sec. service */
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Use in sec. Testimonials*/
+h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h6 {
+  font-size: 48px;
+  line-height: 30px;
+}
+
+a {
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  
+  &:active {
+    color: $color-white;
+  }
+}
+
+li {
+  text-decoration: none;
+}
