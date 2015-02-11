@@ -26,4 +26,12 @@ $color-form: #5d6d7e;
 
 /* Positioning */
 
+/* Clearfix */
+
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 

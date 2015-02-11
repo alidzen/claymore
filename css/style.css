@@ -9,6 +9,16 @@
 /* Colors for bg */
 /**/
 /* Positioning */
+/* Clearfix */
+/* line 31, ../sass/utilities/_settings.scss */
+.clearfix, .contact-form, .contact-mail:before, .contact-mail:after, .contact-form .btn-blue:before, .contact-form .btn-blue:after,
+.contact-form .btn:before,
+.contact-form .btn:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* ==========================================================================
    Utilities.
    ========================================================================== */
@@ -242,8 +252,6 @@ li {
   box-sizing: border-box;
   width: 170px;
   height: 57px;
-  vertical-align: middle;
-  text-align: center;
   background-color: #1abc9c;
   color: #fff;
   font-size: 18px;
@@ -252,7 +260,7 @@ li {
   border-radius: 5px;
 }
 
-/* line 24, ../sass/modules/_btn.scss */
+/* line 22, ../sass/modules/_btn.scss */
 .btn-blue {
   background-color: #3498db;
 }
@@ -263,11 +271,19 @@ li {
 /* ==========================================================================
    Form styles.
    ========================================================================== */
-/* line 5, ../sass/modules/_forms.scss */
+/* line 4, ../sass/modules/_forms.scss */
+.contact-form {
+  position: relative;
+  width: 460px;
+  outline: 2px solid red;
+}
+
+/* line 12, ../sass/modules/_forms.scss */
 .contact-name,
 .contact-mail,
 .contact-subject,
 .contact-message {
+  margin-bottom: 15px;
   color: #fff;
   background-color: #5d6d7e;
   box-sizing: border-box;
@@ -280,33 +296,58 @@ li {
   border-radius: 5px;
 }
 
-/* line 21, ../sass/modules/_forms.scss */
+/* line 29, ../sass/modules/_forms.scss */
 .contact-name,
 .contact-mail {
+  display: inline-block;
   width: 220px;
 }
 
-/* line 26, ../sass/modules/_forms.scss */
+/* line 35, ../sass/modules/_forms.scss */
+.contact-mail {
+  float: right;
+}
+
+/* line 44, ../sass/modules/_forms.scss */
 .contact-subject {
   width: 460px;
   position: relative;
 }
-/* line 30, ../sass/modules/_forms.scss */
-.contact-subject:after {
-  content: '';
-  position: absolute;
-  background: url(/img/icons-s852293ce9a.png) no-repeat 0 -85px;
+
+/* line 49, ../sass/modules/_forms.scss */
+.icons-btn-choose {
   width: 37px;
   height: 32px;
-  outline: 2px solid red;
+  position: absolute;
+  left: 417px;
+  top: 63px;
 }
 
-/* line 41, ../sass/modules/_forms.scss */
+/* line 57, ../sass/modules/_forms.scss */
 .contact-message {
   width: 460px;
   height: 150px;
 }
 
+/* line 62, ../sass/modules/_forms.scss */
+.contact-form .btn-blue,
+.contact-form .btn,
+.contact-form .btn-blue {
+  outline: 2px solid green;
+  display: inline-block;
+}
+
+/* line 75, ../sass/modules/_forms.scss */
+.contact-form .btn-blue {
+  margin-left: 16px;
+  float: right;
+}
+
+/*.contact-form-btn {
+  outline: 2px solid green;
+  display: inline-block;
+  float: right;
+}*/
 /* ==========================================================================
    Table styles.
    ========================================================================== */

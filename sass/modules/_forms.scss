@@ -1,11 +1,19 @@
 /* ==========================================================================
    Form styles.
    ========================================================================== */
+.contact-form {
+  position: relative;
+  width: 460px;
+  outline: 2px solid red;
+  
+  @extend .clearfix;
+}
 
 .contact-name,
 .contact-mail,
 .contact-subject, 
 .contact-message {
+  margin-bottom: 15px;
   color: $color-white;
   background-color: $color-form;
   box-sizing: border-box;
@@ -20,25 +28,58 @@
 
 .contact-name,
 .contact-mail {
+  display: inline-block;
   width: 220px;
+}
+
+.contact-mail {
+  float: right;
+  
+  &:before,
+  &:after {
+    @extend .clearfix;
+  }
 }
 
 .contact-subject {
   width: 460px;
   position: relative;
-  
-  &:after {
-    content: '';
-    position: absolute;
-    background: url(/img/icons-s852293ce9a.png) no-repeat 0 -85px;
-    width: 37px;
-    height: 32px;
-    outline: 2px solid red;
-  }
-  
+}
+
+.icons-btn-choose {
+  width: 37px;
+  height: 32px;
+  position: absolute;
+  left: 417px;
+  top: 63px;
 }
 
 .contact-message {
   width: 460px;
   height: 150px;
 }
+
+.contact-form .btn-blue,
+.contact-form .btn {
+  outline: 2px solid green;
+  display: inline-block;
+//  float: right;
+  
+  &:before,
+  &:after {
+    @extend .clearfix;
+  }
+  
+}
+
+.contact-form .btn-blue {
+  margin-left: 16px;
+  float: right;
+  
+}
+
+/*.contact-form-btn {
+  outline: 2px solid green;
+  display: inline-block;
+  float: right;
+}*/
