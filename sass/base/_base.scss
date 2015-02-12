@@ -1,6 +1,14 @@
 /* ==========================================================================
    Base styles.
    ========================================================================== */
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $font-main;
+}
+
 
 h1 {
   font-size: 72px; 

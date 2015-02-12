@@ -7,10 +7,12 @@
        url("/fonts/opensans-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-  
+}
+
+@font-face {
   /* Logo fonts only */
   font-family: "Bles";
-  src: url(/fonts/BLESD___%20.ttf) format("truetype");
+  src: url("/fonts/Blesd.ttf");
   font-weight: normal;
   font-style: normal;
 }

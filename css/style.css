@@ -11,20 +11,28 @@
 /* Positioning */
 /* Clearfix */
 /* line 31, ../sass/utilities/_settings.scss */
-.clearfix, .contact-form, .contact-mail:before, .contact-mail:after, .contact-form .btn-blue:before, .contact-form .btn-blue:after,
-.contact-form .btn:before,
-.contact-form .btn:after {
+.clearfix, header .nav .logo:before, header .nav .logo:after,
+header .nav .nav:before,
+header .nav .nav:after, header .header-propose:before, header .header-propose:after, header .header-propose img:before, header .header-propose img:after, .contact-form, .contact-mail:before, .contact-mail:after {
   content: "";
   clear: both;
   display: table;
 }
 
+/* Center Wrapper */
+/* line 38, ../sass/utilities/_settings.scss */
+.center-wrapper {
+  margin: 0 auto;
+  width: 940px;
+  outline: 1px dashed red;
+}
+
 /* ==========================================================================
    Utilities.
    ========================================================================== */
-/* line 88, icons/*.png */
-.icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-responsive, .icons-statistic {
-  background-image: url('/img/icons-s852293ce9a.png');
+/* line 96, icons/*.png */
+.icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-logo, .icons-responsive, .icons-statistic {
+  background-image: url('/img/icons-s9485d7bfd9.png');
   background-repeat: no-repeat;
 }
 
@@ -49,13 +57,18 @@
 }
 
 /* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-responsive {
+.icons-logo {
   background-position: 0 -359px;
 }
 
 /* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-responsive {
+  background-position: 0 -415px;
+}
+
+/* line 84, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-statistic {
-  background-position: 0 -444px;
+  background-position: 0 -500px;
 }
 
 /* line 8, ../sass/utilities/_utilities.scss */
@@ -151,7 +164,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* ==========================================================================
    Base styles.
    ========================================================================== */
-/* line 5, ../sass/base/_base.scss */
+/* line 4, ../sass/base/_base.scss */
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+}
+
+/* line 13, ../sass/base/_base.scss */
 h1 {
   font-size: 72px;
   line-height: 30px;
@@ -159,7 +181,7 @@ h1 {
 
 /* h1 - use only for logo */
 /* Use in header-propose and feateres */
-/* line 12, ../sass/base/_base.scss */
+/* line 20, ../sass/base/_base.scss */
 h2 {
   font-size: 30px;
   line-height: 30px;
@@ -167,44 +189,44 @@ h2 {
 }
 
 /* Use in sec. About us */
-/* line 19, ../sass/base/_base.scss */
+/* line 27, ../sass/base/_base.scss */
 h3 {
   font-size: 24px;
   line-height: 24px;
 }
 
 /* Use in sec. service */
-/* line 25, ../sass/base/_base.scss */
+/* line 33, ../sass/base/_base.scss */
 h4 {
   font-size: 20px;
   line-height: 24px;
 }
 
 /* Use in sec. Testimonials*/
-/* line 31, ../sass/base/_base.scss */
+/* line 39, ../sass/base/_base.scss */
 h5 {
   font-size: 24px;
   line-height: 30px;
 }
 
-/* line 36, ../sass/base/_base.scss */
+/* line 44, ../sass/base/_base.scss */
 h6 {
   font-size: 48px;
   line-height: 30px;
 }
 
-/* line 41, ../sass/base/_base.scss */
+/* line 49, ../sass/base/_base.scss */
 a {
   font-size: 18px;
   line-height: 30px;
   text-decoration: none;
 }
-/* line 46, ../sass/base/_base.scss */
+/* line 54, ../sass/base/_base.scss */
 a:active {
   color: #fff;
 }
 
-/* line 51, ../sass/base/_base.scss */
+/* line 59, ../sass/base/_base.scss */
 li {
   text-decoration: none;
 }
@@ -220,9 +242,11 @@ li {
   src: url("/fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans-regular.woff") format("woff"), url("/fonts/opensans-regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+@font-face {
   /* Logo fonts only */
   font-family: "Bles";
-  src: url(/fonts/BLESD___%20.ttf) format("truetype");
+  src: url("/fonts/Blesd.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -230,6 +254,48 @@ li {
 /* ==========================================================================
    Header styles
    ========================================================================== */
+/* line 5, ../sass/layout/_header.scss */
+header {
+  background: url(/img/header-bg.jpg) no-repeat;
+  background-size: 100%;
+  height: 880px;
+  /* End logo and nav*/
+  /*
+  
+  
+  */
+}
+/* line 11, ../sass/layout/_header.scss */
+header .logo {
+  float: left;
+  width: 154px;
+  height: 55px;
+  margin-top: 67px;
+  background: url(/img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
+}
+/* line 20, ../sass/layout/_header.scss */
+header .nav {
+  float: right;
+  margin-top: 90px;
+}
+/* line 24, ../sass/layout/_header.scss */
+header .nav li {
+  display: inline-block;
+}
+/* line 27, ../sass/layout/_header.scss */
+header .nav li a {
+  padding: 10px;
+  color: #fff;
+}
+/* line 41, ../sass/layout/_header.scss */
+header .nav li:first-of-type {
+  border-bottom: 3px solid #1abc9c;
+}
+/* line 50, ../sass/layout/_header.scss */
+header .header-propose {
+  outline: 5px solid black;
+}
+
 /* mean layout header */
 /* ==========================================================================
    Navigation styles.
@@ -247,7 +313,7 @@ li {
    Button styles
    ========================================================================== */
 /* line 5, ../sass/modules/_btn.scss */
-.btn, .btn-blue {
+.btn {
   display: block;
   box-sizing: border-box;
   width: 170px;
@@ -262,7 +328,16 @@ li {
 
 /* line 22, ../sass/modules/_btn.scss */
 .btn-blue {
+  display: block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 57px;
   background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
 }
 
 /* ==========================================================================
@@ -329,25 +404,20 @@ li {
   height: 150px;
 }
 
-/* line 62, ../sass/modules/_forms.scss */
-.contact-form .btn-blue,
+/* line 64, ../sass/modules/_forms.scss */
 .contact-form .btn,
 .contact-form .btn-blue {
-  outline: 2px solid green;
-  display: inline-block;
+  float: left;
 }
-
-/* line 75, ../sass/modules/_forms.scss */
+/* line 69, ../sass/modules/_forms.scss */
 .contact-form .btn-blue {
-  margin-left: 16px;
   float: right;
 }
+/* line 73, ../sass/modules/_forms.scss */
+.contact-form .btn {
+  margin-left: 100px;
+}
 
-/*.contact-form-btn {
-  outline: 2px solid green;
-  display: inline-block;
-  float: right;
-}*/
 /* ==========================================================================
    Table styles.
    ========================================================================== */

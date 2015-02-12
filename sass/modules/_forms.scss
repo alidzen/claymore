@@ -59,27 +59,19 @@
   height: 150px;
 }
 
-.contact-form .btn-blue,
-.contact-form .btn {
-  outline: 2px solid green;
-  display: inline-block;
-//  float: right;
+.contact-form {
   
-  &:before,
-  &:after {
-    @extend .clearfix;
+  .btn,
+  .btn-blue {
+    float: left;
+  }
+  
+  .btn-blue {
+    float: right;
+  }
+  
+  .btn {
+    margin-left: 100px;
   }
   
 }
-
-.contact-form .btn-blue {
-  margin-left: 16px;
-  float: right;
-  
-}
-
-/*.contact-form-btn {
-  outline: 2px solid green;
-  display: inline-block;
-  float: right;
-}*/
