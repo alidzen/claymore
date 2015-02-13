@@ -35,10 +35,8 @@
 .contact-mail {
   float: right;
   
-  &:before,
-  &:after {
-    @extend .clearfix;
-  }
+  @extend .clearfix
+    
 }
 
 .contact-subject {

@@ -19,7 +19,7 @@ $color-blue: #3498db;
 
 /* Colors for bg */
 $color-bg1: #34495e;
-$color-bg2: #2c3e50;
+$color-bg2: #f7f7f7;
 /**/
 $color-form: #5d6d7e;
 
@@ -29,13 +29,19 @@ $color-form: #5d6d7e;
 /* Clearfix */
 
 .clearfix {
-  content: "";
-  clear: both;
-  display: table;
+  
+  &:after,
+  &:before {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
 
 /* Center Wrapper */
 .center-wrapper {
+  @extend .clearfix;
+  
   margin: 0 auto;
   width: 940px;
   outline: 1px dashed red;

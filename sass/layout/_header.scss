@@ -2,10 +2,10 @@
    Header styles
    ========================================================================== */
 
-header {
+.header {
   background: url(/img/header-bg.jpg) no-repeat;
-  background-size: 100%;
-  height: 880px;
+  background-size: cover;
+  height: 877px;
   
   
   .logo {
@@ -32,10 +32,7 @@ header {
     
     .logo,
     .nav {
-      &:before,
-      &:after {
-        @extend .clearfix;
-      }
+      @extend .clearfix;
     }
     
     li:first-of-type {
@@ -48,29 +45,54 @@ header {
   
   */
   .header-propose {
-    outline: 5px solid black;
+    margin-top: 190px;
     
-    &:before,
-    &:after {
-      @extend .clearfix;
-      }
-    
+    @extend .clearfix;
     
     img {
-//        float: left;
+      float: left;
+      
+      margin-right: 41px;
+      
       
       &:before,
       &:after {
         @extend .clearfix;
+      }
     }
+    
+    .header-propose-text {
+      margin-top: 58px;
+      color: $color-white;
       
+      h2 {
+        margin-bottom: 42px;
+      }
+      
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 300;
+      }
+      
+      .propose-list {
+        margin-top: 65px;
+        
+        li {
+          display: inline-block;
+        }
+        
+      }
+      
+      .propose-list-choice {
+        position: relative;
+        background-color: #fff;
+        color: $color-dark-blue;
+        border-radius: 50%;
+        box-shadow: 0 0 0 10px #fff;
+        z-index: 99;
+      }
     }
   }
-  
-  
-  
-  
-  
-  
 }
 /* mean layout header */
