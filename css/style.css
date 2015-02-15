@@ -30,7 +30,7 @@
 /* Create sprites */
 /* line 96, icons/*.png */
 .icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-logo, .icons-responsive, .icons-statistic {
-  background-image: url('/img/icons-s9485d7bfd9.png');
+  background-image: url("../img/icons-s9485d7bfd9.png");
   background-repeat: no-repeat;
 }
 
@@ -282,7 +282,7 @@ p {
    ========================================================================== */
 /* line 5, ../sass/layout/_header.scss */
 .header {
-  background: url(/img/header-bg.jpg) no-repeat;
+  background: url(../img/header-bg.jpg) no-repeat;
   background-size: cover;
   height: 877px;
 }
@@ -299,7 +299,7 @@ p {
   width: 154px;
   height: 55px;
   margin-top: 67px;
-  background: url(/img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
+  background: url(../img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
 }
 
 /* / logo */
@@ -357,10 +357,6 @@ p {
   margin-top: 112px;
 }
 /* line 13, ../sass/layout/_main.scss */
-.about-us h3 {
-  display: inline-block;
-}
-/* line 17, ../sass/layout/_main.scss */
 .about-us p {
   float: left;
   width: 604px;
@@ -368,7 +364,7 @@ p {
   font-size: 18px;
   line-height: 30px;
 }
-/* line 25, ../sass/layout/_main.scss */
+/* line 21, ../sass/layout/_main.scss */
 .about-us .icons-statistic {
   margin-top: -20px;
   float: right;
@@ -377,35 +373,35 @@ p {
 /* / about-us */
 /*
 */
-/* line 35, ../sass/layout/_main.scss */
+/* line 31, ../sass/layout/_main.scss */
 .service {
   margin-top: 128px;
   background-color: #f7f7f7;
   opacity: 50%;
 }
-/* line 41, ../sass/layout/_main.scss */
+/* line 37, ../sass/layout/_main.scss */
 .service .center-wrapper {
   padding: 75px 0 98px 0;
 }
-/* line 47, ../sass/layout/_main.scss */
+/* line 43, ../sass/layout/_main.scss */
 .service .service-item {
   width: 298px;
   display: inline-block;
   text-align: center;
 }
-/* line 52, ../sass/layout/_main.scss */
+/* line 48, ../sass/layout/_main.scss */
 .service .service-item div {
   margin: 0 auto;
 }
-/* line 56, ../sass/layout/_main.scss */
+/* line 52, ../sass/layout/_main.scss */
 .service .service-item h4 {
   margin: 29px 0 23px;
 }
-/* line 60, ../sass/layout/_main.scss */
+/* line 56, ../sass/layout/_main.scss */
 .service .service-item:not(:first-of-type) {
   margin-left: 18px;
 }
-/* line 64, ../sass/layout/_main.scss */
+/* line 60, ../sass/layout/_main.scss */
 .service .service-item p {
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
   font-size: 14px;
@@ -415,45 +411,45 @@ p {
 /* / service */
 /*
 */
-/* line 76, ../sass/layout/_main.scss */
+/* line 72, ../sass/layout/_main.scss */
 .features {
   position: relative;
-  background: url(/img/main-bg.jpg) no-repeat;
+  background: url(../img/main-bg.jpg) no-repeat;
   background-size: 100% 510px;
   text-align: center;
   color: #fff;
   /* add slider arrows */
   /* positioning right arrow*/
 }
-/* line 83, ../sass/layout/_main.scss */
+/* line 79, ../sass/layout/_main.scss */
 .features:before, .features:after {
   content: "";
   position: absolute;
   top: 259px;
-  background: url(/img/arrows.png) no-repeat 0 0;
+  background: url(../img/arrows.png) no-repeat 0 0;
   display: block;
   height: 84px;
   width: 49px;
 }
-/* line 94, ../sass/layout/_main.scss */
+/* line 90, ../sass/layout/_main.scss */
 .features:before {
   left: 285px;
 }
-/* line 98, ../sass/layout/_main.scss */
+/* line 94, ../sass/layout/_main.scss */
 .features:after {
   right: 275px;
   background-position: 100% 0;
 }
-/* line 104, ../sass/layout/_main.scss */
+/* line 100, ../sass/layout/_main.scss */
 .features h2 {
   margin: 62px 0 9px 0;
 }
-/* line 108, ../sass/layout/_main.scss */
+/* line 104, ../sass/layout/_main.scss */
 .features p {
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
 }
 
-/* line 114, ../sass/layout/_main.scss */
+/* line 110, ../sass/layout/_main.scss */
 .features-laptop {
   position: relative;
   padding-top: 100px;
@@ -462,38 +458,38 @@ p {
 /* / features*/
 /*
 */
-/* line 123, ../sass/layout/_main.scss */
+/* line 119, ../sass/layout/_main.scss */
 .testimonials {
   text-align: center;
 }
-/* line 125, ../sass/layout/_main.scss */
+/* line 121, ../sass/layout/_main.scss */
 .testimonials .center-wrapper {
   margin-bottom: 136px;
 }
-/* line 131, ../sass/layout/_main.scss */
+/* line 127, ../sass/layout/_main.scss */
 .testimonials h6 {
   margin-bottom: 69px;
   margin-top: 58px;
 }
-/* line 136, ../sass/layout/_main.scss */
+/* line 132, ../sass/layout/_main.scss */
 .testimonials .t-list {
   display: inline-block;
   width: 450px;
 }
-/* line 142, ../sass/layout/_main.scss */
+/* line 138, ../sass/layout/_main.scss */
 .testimonials .t-list:nth-child(2n) {
   margin-left: 32px;
 }
-/* line 146, ../sass/layout/_main.scss */
+/* line 142, ../sass/layout/_main.scss */
 .testimonials .t-list div {
   float: left;
   margin-right: 20px;
 }
-/* line 151, ../sass/layout/_main.scss */
+/* line 147, ../sass/layout/_main.scss */
 .testimonials .t-list h5 {
   margin: 28px 0 32px 0;
 }
-/* line 155, ../sass/layout/_main.scss */
+/* line 151, ../sass/layout/_main.scss */
 .testimonials .t-list p {
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
 }
@@ -501,54 +497,54 @@ p {
 /* / testimonials */
 /*
 */
-/* line 164, ../sass/layout/_main.scss */
+/* line 160, ../sass/layout/_main.scss */
 .contact {
   background-color: #34495e;
 }
-/* line 168, ../sass/layout/_main.scss */
+/* line 164, ../sass/layout/_main.scss */
 .contact .center-wrapper {
   padding: 110px 0 117px 0;
 }
 
-/* line 174, ../sass/layout/_main.scss */
+/* line 170, ../sass/layout/_main.scss */
 .contact-info {
   float: left;
   width: 460px;
   color: #fff;
   /* / edit "p" element */
 }
-/* line 182, ../sass/layout/_main.scss */
+/* line 178, ../sass/layout/_main.scss */
 .contact-info h5 {
   line-height: 28px;
   margin-bottom: 23px;
 }
-/* line 188, ../sass/layout/_main.scss */
+/* line 184, ../sass/layout/_main.scss */
 .contact-info p:first-of-type {
   margin-bottom: 45px;
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
 }
-/* line 193, ../sass/layout/_main.scss */
+/* line 189, ../sass/layout/_main.scss */
 .contact-info p:not(:first-of-type) {
   margin-bottom: 22px;
 }
-/* line 196, ../sass/layout/_main.scss */
+/* line 192, ../sass/layout/_main.scss */
 .contact-info p:not(:first-of-type):before {
   content: "";
-  background: url(/img/contact.png) no-repeat;
+  background: url(../img/contact.png) no-repeat;
   display: inline-block;
   width: 25px;
   height: 20px;
 }
-/* line 206, ../sass/layout/_main.scss */
+/* line 202, ../sass/layout/_main.scss */
 .contact-info p:nth-child(4):before {
-  background: url(/img/contact.png) no-repeat 0 50%;
+  background: url(../img/contact.png) no-repeat 0 50%;
 }
-/* line 213, ../sass/layout/_main.scss */
+/* line 209, ../sass/layout/_main.scss */
 .contact-info p:nth-child(5):before {
-  background: url(/img/contact.png) no-repeat 0 100%;
+  background: url(../img/contact.png) no-repeat 0 100%;
 }
 
-/* line 221, ../sass/layout/_main.scss */
+/* line 217, ../sass/layout/_main.scss */
 .contact-form {
   float: right;
 }

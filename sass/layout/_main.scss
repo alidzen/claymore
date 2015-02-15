@@ -10,10 +10,6 @@
 
   @extend .clearfix;
 
-  h3 {
-    display: inline-block;
-  }
-
   p {
     float: left;
     width: 604px;
@@ -75,7 +71,7 @@
 
 .features {
   position: relative;
-  background: url(/img/main-bg.jpg) no-repeat;
+  background: url(../img/main-bg.jpg) no-repeat;
   background-size: 100% 510px;
   text-align: center;
   color: $color-white;
@@ -85,7 +81,7 @@
     content: "";
     position: absolute;
     top: 259px;
-    background: url(/img/arrows.png) no-repeat 0 0;
+    background: url(../img/arrows.png) no-repeat 0 0;
     display: block;
     height: 84px;
     width: 49px;
@@ -195,7 +191,7 @@
       
       &:before {
         content: "";
-        background: url(/img/contact.png) no-repeat  ;
+        background: url(../img/contact.png) no-repeat  ;
         display: inline-block;
         width: 25px;
         height: 20px;
@@ -204,14 +200,14 @@
     
     &:nth-child(4) {
       &:before {
-        background: url(/img/contact.png) no-repeat 0 50%;
+        background: url(../img/contact.png) no-repeat 0 50%;
       }
     }
     
     &:nth-child(5) {
       
       &:before {
-        background: url(/img/contact.png) no-repeat 0 100%;
+        background: url(../img/contact.png) no-repeat 0 100%;
       }
     }
   }
