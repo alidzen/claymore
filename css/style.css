@@ -22,6 +22,62 @@
   width: 940px;
 }
 
+/* ==========================================================================
+   Utilities.
+   ========================================================================== */
+/* Create sprites */
+.icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-logo, .icons-responsive, .icons-statistic {
+  background-image: url('../img/icons-s9485d7bfd9.png');
+  background-repeat: no-repeat;
+}
+
+.icons-browser {
+  background-position: 0 0;
+}
+
+.icons-btn-choose {
+  background-position: 0 -85px;
+}
+
+.icons-face {
+  background-position: 0 -117px;
+}
+
+.icons-heart {
+  background-position: 0 -273px;
+}
+
+.icons-logo {
+  background-position: 0 -359px;
+}
+
+.icons-responsive {
+  background-position: 0 -415px;
+}
+
+.icons-statistic {
+  background-position: 0 -500px;
+}
+
+.icons-heart,
+.icons-responsive,
+.icons-browser {
+  display: block;
+  height: 85px;
+  width: 99px;
+}
+
+.icons-face {
+  display: block;
+  width: 142px;
+  height: 156px;
+}
+
+.icons-statistic {
+  width: 238px;
+  height: 144px;
+}
+
 /* Bootstrap or another */
 /* I Used Susy */
 /* Base */
