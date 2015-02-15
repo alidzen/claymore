@@ -6,93 +6,79 @@
   background: url(/img/header-bg.jpg) no-repeat;
   background-size: cover;
   height: 877px;
+}
+
+.nav {
+  float: right;
+  margin-top: 90px;
+}
   
+
+.logo {
+  float: left;
+  width: 154px;
+  height: 55px;
+  margin-top: 67px;
+  background: url(/img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
   
-  .logo {
+  @extend .clearfix;
+
+}
+
+/* / logo */
+
+.header-propose {
+  margin-top: 190px;
+
+  @extend .clearfix;
+
+  img {
     float: left;
-    width: 154px;
-    height: 55px;
-    margin-top: 67px;
-    background: url(/img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
-    
-  }
 
-  .nav {
-    float: right;
-    margin-top: 90px;
+    margin-right: 41px;
 
-    li {
-      display: inline-block;
 
-      a {
-        padding: 10px;
-        color:$color-white;
-      }
-    }
-    
-    .logo,
-    .nav {
+    &:before,
+    &:after {
       @extend .clearfix;
     }
-    
-    li:first-of-type {
-      border-bottom: 3px solid $color-green;
-    }
   }
-  /* End logo and nav*/
-  /*
-  
-  
-  */
-  .header-propose {
-    margin-top: 190px;
-    
-    @extend .clearfix;
-    
-    img {
-      float: left;
-      
-      margin-right: 41px;
-      
-      
-      &:before,
-      &:after {
-        @extend .clearfix;
-      }
+
+  .header-propose-text {
+    margin-top: 58px;
+    color: $color-white;
+
+    h2 {
+      margin-bottom: 42px;
     }
-    
-    .header-propose-text {
-      margin-top: 58px;
-      color: $color-white;
-      
-      h2 {
-        margin-bottom: 42px;
+
+    p {
+      font-family: $font-main-light;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .propose-list {
+      margin-top: 65px;
+
+      li {
+        display: inline-block;
       }
-      
-      p {
-        font-size: 18px;
-        line-height: 30px;
-        font-weight: 300;
-      }
-      
-      .propose-list {
-        margin-top: 65px;
-        
-        li {
-          display: inline-block;
-        }
-        
-      }
-      
-      .propose-list-choice {
-        position: relative;
-        background-color: #fff;
-        color: $color-dark-blue;
-        border-radius: 50%;
-        box-shadow: 0 0 0 10px #fff;
-        z-index: 99;
-      }
+
+    }
+
+    .propose-list-choice {
+      position: relative;
+      background-color: #fff;
+      color: $color-dark-blue;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px #fff;
     }
   }
 }
-/* mean layout header */
+
+/* / header */
+/*
+
+
+*/

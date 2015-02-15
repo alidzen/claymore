@@ -3,139 +3,231 @@
    ========================================================================== */
 
 .main {
+}
+
+.about-us {
+  margin-top: 112px;
+
+  @extend .clearfix;
+
+  h3 {
+    display: inline-block;
+  }
+
+  p {
+    float: left;
+    width: 604px;
+    margin-top: 27px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .icons-statistic {
+    margin-top: -20px;
+    float: right;
+  }
+
+}
+/* / about-us */
+/*
+*/
+
+.service {
+//    height: 397px;
+  margin-top: 128px;
+  background-color: $color-bg2;
+  opacity: 50%;
+
+  .center-wrapper {
+    padding: 75px 0 98px 0;
+  }
+
+
+
+  .service-item {
+    width: 298px;
+    display: inline-block;
+    text-align: center;
+
+    div {
+      margin: 0 auto;
+    }
+
+    h4 {
+      margin: 29px 0 23px;
+    }
+
+    &:not(:first-of-type) {
+      margin-left: 18px;
+    }
+
+    p {
+      font-family: $font-main-light;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+/* / service */
+/*
+*/
+
+
+.features {
+  position: relative;
+  background: url(/img/main-bg.jpg) no-repeat;
+  background-size: 100% 510px;
+  text-align: center;
+  color: $color-white;
   
-  .about-us {
-    margin-top: 112px;
-    
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 259px;
+    background: url(/img/arrows.png) no-repeat 0 0;
+    display: block;
+    height: 84px;
+    width: 49px;
+  }
+  /* add slider arrows */
+  &:before {
+    left: 285px;
+  }
+  
+  &:after{
+    right: 275px;
+    background-position: 100% 0;
+  }
+  /* positioning right arrow*/
+
+  h2 {
+    margin: 62px 0 9px 0;
+  }
+  
+  p {
+    font-family: $font-main-light;
+  }
+
+}
+
+.features-laptop {
+  position: relative;
+  padding-top: 100px;
+
+}
+/* / features*/
+/*
+*/
+
+.testimonials {
+
+  .center-wrapper {
+    margin-bottom: 136px;
+  }
+
+  text-align: center;
+
+  h6 {
+    margin-bottom: 69px;
+    margin-top: 58px;
+  }
+
+  .t-list {
+    display: inline-block;
+    width: 450px;
+
     @extend .clearfix;
-    
-    h3 {
-      display: inline-block;
+
+    &:nth-child(2n) {
+      margin-left: 32px;
+    }
+
+    div {
+      float: left;
+      margin-right: 20px;
+    }
+
+    h5 {
+      margin: 28px 0 32px 0;
     }
     
     p {
-      float: left;
-      width: 604px;
-      margin-top: 27px;
-      font-size: 18px;
-      line-height: 30px;
-    }
-    
-    .icons-statistic {
-      margin-top: -20px;
-      float: right;
-    }
-    
-  }
-  /* / about-us*/
-  
-  
-  .service {
-//    height: 397px;
-    margin-top: 128px;
-    background-color: $color-bg2;
-    opacity: 50%;
-    
-    .center-wrapper {
-      padding: 75px 0 98px 0;
-    }
-    
-    
-    
-    .service-item {
-      width: 298px;
-      display: inline-block;
-      text-align: center;
-      
-      div {
-        margin: 0 auto;
-      }
-      
-      h4 {
-        margin: 29px 0 23px;
-      }
-      
-      &:not(:first-of-type) {
-        margin-left: 18px;
-      }
-      
-      p {
-        font-size: 14px;
-        line-height: 18px;
-        font-weight: 300;
-      }
+      font-family: $font-main-light;
     }
   }
-  /* / service */
-  
-  
-  .features {
-    background: url(/img/main-bg.jpg) no-repeat;
-    background-size: 100% 510px;
-    text-align: center;
+}
+/* / testimonials */
+/*
+*/
 
-    
-    h2 {
-      margin: 62px 0 9px 0;
+.contact {
+
+  background-color: $color-bg1;
+
+  .center-wrapper {
+    padding: 110px 0 117px 0;
+  }
+
+}
+
+.contact-info {
+
+  @extend .clearfix;
+
+  float: left;
+  width: 460px;
+  color: $color-white;
+
+  h5 {
+    line-height: 28px;
+    margin-bottom: 23px;
+  }
+
+  p {
+    &:first-of-type {
+      margin-bottom: 45px;
+      font-family: $font-main-light;
     }
     
-    .features-laptop {
-      position: relative;
-      padding-top: 100px;
+    &:not(:first-of-type) {
+      margin-bottom: 22px;
       
-      
-      &:before,
-      &:after {
+      &:before {
         content: "";
-        position: absolute;
-        top: 142px;
-        background: url(/img/arrows.png) no-repeat 0 0;
-        background-color: red;
-        display: block;
-        height: 84px;
-        width: 49px;
-      }
-      /* add slider arrows */
-      
-      &:after{
-        right: 0;
-        background-position: 100% 0;
-      }
-      /* positioning right arrow*/
-    }
-  }
-  /* / features*/
-  
-  .testimonials {
-    text-align: center;
-    
-    .t-list {
-      outline: 1px solid black;
-      display: inline-block;
-      width: 450px;
-      
-      @extend .clearfix;
-      
-      &:nth-child(2n) {
-        margin-left: 30px;
-        outline: 3px solid red;
-      }
-      
-      div {
-        float: left;
-        margin-right: 22px;
-      }
-      
-      h5 {
-        margin: 28px 0 32px;
+        background: url(/img/contact.png) no-repeat  ;
+        display: inline-block;
+        width: 25px;
+        height: 20px;
       }
     }
     
+    &:nth-child(4) {
+      &:before {
+        background: url(/img/contact.png) no-repeat 0 50%;
+      }
+    }
     
+    &:nth-child(5) {
+      
+      &:before {
+        background: url(/img/contact.png) no-repeat 0 100%;
+      }
+    }
   }
-  
-  
+  /* / edit "p" element */
+}
+
+.contact-form {
+  @extend .clearfix;
+
+  float: right;
 }
 
 
-/* mean layout main */
+
+/* / Main */
+/*
+
+
+*/

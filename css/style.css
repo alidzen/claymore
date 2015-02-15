@@ -10,26 +10,24 @@
 /**/
 /* Positioning */
 /* Clearfix */
-/* line 33, ../sass/utilities/_settings.scss */
-.clearfix:after, .center-wrapper:after, .header .nav .logo:after,
-.header .nav .nav:after, .header .header-propose:after, .header .header-propose img:after, .main .about-us:after, .main .testimonials .t-list:after, .contact-form:after, .contact-mail:after, .clearfix:before, .center-wrapper:before, .header .nav .logo:before,
-.header .nav .nav:before, .header .header-propose:before, .header .header-propose img:before, .main .about-us:before, .main .testimonials .t-list:before, .contact-form:before, .contact-mail:before {
+/* line 34, ../sass/utilities/_settings.scss */
+.clearfix:after, .center-wrapper:after, .nav .nav:after, .logo:after, .header-propose:after, .header-propose img:after, .about-us:after, .testimonials .t-list:after, .contact-info:after, .contact-form:after, .contact-mail:after, .clearfix:before, .center-wrapper:before, .nav .nav:before, .logo:before, .header-propose:before, .header-propose img:before, .about-us:before, .testimonials .t-list:before, .contact-info:before, .contact-form:before, .contact-mail:before {
   content: "";
   clear: both;
   display: table;
 }
 
 /* Center Wrapper */
-/* line 42, ../sass/utilities/_settings.scss */
+/* line 43, ../sass/utilities/_settings.scss */
 .center-wrapper {
   margin: 0 auto;
   width: 940px;
-  outline: 1px dashed red;
 }
 
 /* ==========================================================================
    Utilities.
    ========================================================================== */
+/* Create sprites */
 /* line 96, icons/*.png */
 .icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-logo, .icons-responsive, .icons-statistic {
   background-image: url('/img/icons-s9485d7bfd9.png');
@@ -71,7 +69,7 @@
   background-position: 0 -500px;
 }
 
-/* line 8, ../sass/utilities/_utilities.scss */
+/* line 9, ../sass/utilities/_utilities.scss */
 .icons-heart,
 .icons-responsive,
 .icons-browser {
@@ -80,14 +78,14 @@
   width: 99px;
 }
 
-/* line 16, ../sass/utilities/_utilities.scss */
+/* line 17, ../sass/utilities/_utilities.scss */
 .icons-face {
   display: block;
   width: 142px;
   height: 156px;
 }
 
-/* line 22, ../sass/utilities/_utilities.scss */
+/* line 23, ../sass/utilities/_utilities.scss */
 .icons-statistic {
   width: 238px;
   height: 144px;
@@ -170,7 +168,7 @@ body {
   margin: 0 auto;
   font-size: 14px;
   line-height: 18px;
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
   color: #34495e;
 }
 
@@ -232,6 +230,11 @@ li {
   text-decoration: none;
 }
 
+/* line 64, ../sass/base/_base.scss */
+p {
+  font-weight: 300;
+}
+
 /* ==========================================================================
    Ie8 styles.
    ========================================================================== */
@@ -245,13 +248,35 @@ li {
   font-style: normal;
 }
 @font-face {
-  /* Logo fonts only */
-  font-family: "Bles";
-  src: url("/fonts/Blesd.ttf");
+  font-family: "OpenSansLight";
+  src: url("/fonts/open_sans_condensed_light.eot");
+  src: url("/fonts/open_sans_condensed_light.eot?#iefix") format("embedded-opentype"), url("/fonts/open_sans_condensed_light.woff") format("woff"), url("/fonts/open_sans_condensed_light.ttf") format("truetype"), url("/fonts/open_sans_condensed_light.svg#OpenSansCondensedLight") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 /* Layout */
+/* ==========================================================================
+   Navigation styles.
+   ========================================================================== */
+/* line 6, ../sass/layout/_nav.scss */
+.nav li {
+  display: inline-block;
+}
+/* line 9, ../sass/layout/_nav.scss */
+.nav li a {
+  padding: 10px;
+  color: #fff;
+}
+/* line 14, ../sass/layout/_nav.scss */
+.nav li:last-of-type {
+  font-weight: bold;
+}
+/* line 23, ../sass/layout/_nav.scss */
+.nav li:first-of-type {
+  border-bottom: 3px solid #1abc9c;
+}
+
+/* End nav*/
 /* ==========================================================================
    Header styles
    ========================================================================== */
@@ -260,211 +285,300 @@ li {
   background: url(/img/header-bg.jpg) no-repeat;
   background-size: cover;
   height: 877px;
-  /* End logo and nav*/
-  /*
-  
-  
-  */
 }
+
 /* line 11, ../sass/layout/_header.scss */
-.header .logo {
+.nav {
+  float: right;
+  margin-top: 90px;
+}
+
+/* line 17, ../sass/layout/_header.scss */
+.logo {
   float: left;
   width: 154px;
   height: 55px;
   margin-top: 67px;
   background: url(/img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
 }
-/* line 20, ../sass/layout/_header.scss */
-.header .nav {
-  float: right;
-  margin-top: 90px;
-}
-/* line 24, ../sass/layout/_header.scss */
-.header .nav li {
-  display: inline-block;
-}
-/* line 27, ../sass/layout/_header.scss */
-.header .nav li a {
-  padding: 10px;
-  color: #fff;
-}
-/* line 38, ../sass/layout/_header.scss */
-.header .nav li:first-of-type {
-  border-bottom: 3px solid #1abc9c;
-}
-/* line 47, ../sass/layout/_header.scss */
-.header .header-propose {
+
+/* / logo */
+/* line 30, ../sass/layout/_header.scss */
+.header-propose {
   margin-top: 190px;
 }
-/* line 52, ../sass/layout/_header.scss */
-.header .header-propose img {
+/* line 35, ../sass/layout/_header.scss */
+.header-propose img {
   float: left;
   margin-right: 41px;
 }
-/* line 64, ../sass/layout/_header.scss */
-.header .header-propose .header-propose-text {
+/* line 47, ../sass/layout/_header.scss */
+.header-propose .header-propose-text {
   margin-top: 58px;
   color: #fff;
 }
-/* line 68, ../sass/layout/_header.scss */
-.header .header-propose .header-propose-text h2 {
+/* line 51, ../sass/layout/_header.scss */
+.header-propose .header-propose-text h2 {
   margin-bottom: 42px;
 }
-/* line 72, ../sass/layout/_header.scss */
-.header .header-propose .header-propose-text p {
+/* line 55, ../sass/layout/_header.scss */
+.header-propose .header-propose-text p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 300;
 }
-/* line 78, ../sass/layout/_header.scss */
-.header .header-propose .header-propose-text .propose-list {
+/* line 61, ../sass/layout/_header.scss */
+.header-propose .header-propose-text .propose-list {
   margin-top: 65px;
 }
-/* line 81, ../sass/layout/_header.scss */
-.header .header-propose .header-propose-text .propose-list li {
+/* line 64, ../sass/layout/_header.scss */
+.header-propose .header-propose-text .propose-list li {
   display: inline-block;
 }
-/* line 87, ../sass/layout/_header.scss */
-.header .header-propose .header-propose-text .propose-list-choice {
+/* line 70, ../sass/layout/_header.scss */
+.header-propose .header-propose-text .propose-list-choice {
   position: relative;
   background-color: #fff;
   color: #34495e;
   border-radius: 50%;
   box-shadow: 0 0 0 10px #fff;
-  z-index: 99;
 }
 
-/* mean layout header */
-/* ==========================================================================
-   Navigation styles.
-   ========================================================================== */
-/* mean layout navigation*/
+/* / header */
+/*
+
+
+*/
 /* ==========================================================================
    Main styles
    ========================================================================== */
-/* line 5, ../sass/layout/_main.scss */
-.main {
-  /* / about-us*/
-  /* / service */
-  /* / features*/
-}
-/* line 7, ../sass/layout/_main.scss */
-.main .about-us {
+/* line 8, ../sass/layout/_main.scss */
+.about-us {
   margin-top: 112px;
 }
-/* line 12, ../sass/layout/_main.scss */
-.main .about-us h3 {
+/* line 13, ../sass/layout/_main.scss */
+.about-us h3 {
   display: inline-block;
 }
-/* line 16, ../sass/layout/_main.scss */
-.main .about-us p {
+/* line 17, ../sass/layout/_main.scss */
+.about-us p {
   float: left;
   width: 604px;
   margin-top: 27px;
   font-size: 18px;
   line-height: 30px;
 }
-/* line 24, ../sass/layout/_main.scss */
-.main .about-us .icons-statistic {
+/* line 25, ../sass/layout/_main.scss */
+.about-us .icons-statistic {
   margin-top: -20px;
   float: right;
 }
-/* line 33, ../sass/layout/_main.scss */
-.main .service {
+
+/* / about-us */
+/*
+*/
+/* line 35, ../sass/layout/_main.scss */
+.service {
   margin-top: 128px;
   background-color: #f7f7f7;
   opacity: 50%;
 }
-/* line 39, ../sass/layout/_main.scss */
-.main .service .center-wrapper {
+/* line 41, ../sass/layout/_main.scss */
+.service .center-wrapper {
   padding: 75px 0 98px 0;
 }
-/* line 45, ../sass/layout/_main.scss */
-.main .service .service-item {
+/* line 47, ../sass/layout/_main.scss */
+.service .service-item {
   width: 298px;
   display: inline-block;
   text-align: center;
 }
-/* line 50, ../sass/layout/_main.scss */
-.main .service .service-item div {
+/* line 52, ../sass/layout/_main.scss */
+.service .service-item div {
   margin: 0 auto;
 }
-/* line 54, ../sass/layout/_main.scss */
-.main .service .service-item h4 {
+/* line 56, ../sass/layout/_main.scss */
+.service .service-item h4 {
   margin: 29px 0 23px;
 }
-/* line 58, ../sass/layout/_main.scss */
-.main .service .service-item:not(:first-of-type) {
+/* line 60, ../sass/layout/_main.scss */
+.service .service-item:not(:first-of-type) {
   margin-left: 18px;
 }
-/* line 62, ../sass/layout/_main.scss */
-.main .service .service-item p {
+/* line 64, ../sass/layout/_main.scss */
+.service .service-item p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 300;
 }
-/* line 72, ../sass/layout/_main.scss */
-.main .features {
+
+/* / service */
+/*
+*/
+/* line 76, ../sass/layout/_main.scss */
+.features {
+  position: relative;
   background: url(/img/main-bg.jpg) no-repeat;
   background-size: 100% 510px;
   text-align: center;
-}
-/* line 78, ../sass/layout/_main.scss */
-.main .features h2 {
-  margin: 62px 0 9px 0;
-}
-/* line 82, ../sass/layout/_main.scss */
-.main .features .features-laptop {
-  position: relative;
-  padding-top: 100px;
+  color: #fff;
   /* add slider arrows */
   /* positioning right arrow*/
 }
-/* line 87, ../sass/layout/_main.scss */
-.main .features .features-laptop:before, .main .features .features-laptop:after {
+/* line 83, ../sass/layout/_main.scss */
+.features:before, .features:after {
   content: "";
   position: absolute;
-  top: 142px;
+  top: 259px;
   background: url(/img/arrows.png) no-repeat 0 0;
-  background-color: red;
   display: block;
   height: 84px;
   width: 49px;
 }
-/* line 100, ../sass/layout/_main.scss */
-.main .features .features-laptop:after {
-  right: 0;
+/* line 94, ../sass/layout/_main.scss */
+.features:before {
+  left: 285px;
+}
+/* line 98, ../sass/layout/_main.scss */
+.features:after {
+  right: 275px;
   background-position: 100% 0;
 }
-/* line 109, ../sass/layout/_main.scss */
-.main .testimonials {
+/* line 104, ../sass/layout/_main.scss */
+.features h2 {
+  margin: 62px 0 9px 0;
+}
+/* line 108, ../sass/layout/_main.scss */
+.features p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
+}
+
+/* line 114, ../sass/layout/_main.scss */
+.features-laptop {
+  position: relative;
+  padding-top: 100px;
+}
+
+/* / features*/
+/*
+*/
+/* line 123, ../sass/layout/_main.scss */
+.testimonials {
   text-align: center;
 }
-/* line 112, ../sass/layout/_main.scss */
-.main .testimonials .t-list {
-  outline: 1px solid black;
+/* line 125, ../sass/layout/_main.scss */
+.testimonials .center-wrapper {
+  margin-bottom: 136px;
+}
+/* line 131, ../sass/layout/_main.scss */
+.testimonials h6 {
+  margin-bottom: 69px;
+  margin-top: 58px;
+}
+/* line 136, ../sass/layout/_main.scss */
+.testimonials .t-list {
   display: inline-block;
   width: 450px;
 }
-/* line 119, ../sass/layout/_main.scss */
-.main .testimonials .t-list:nth-child(2n) {
-  margin-left: 30px;
-  outline: 3px solid red;
+/* line 142, ../sass/layout/_main.scss */
+.testimonials .t-list:nth-child(2n) {
+  margin-left: 32px;
 }
-/* line 124, ../sass/layout/_main.scss */
-.main .testimonials .t-list div {
+/* line 146, ../sass/layout/_main.scss */
+.testimonials .t-list div {
   float: left;
-  margin-right: 22px;
+  margin-right: 20px;
 }
-/* line 129, ../sass/layout/_main.scss */
-.main .testimonials .t-list h5 {
-  margin: 28px 0 32px;
+/* line 151, ../sass/layout/_main.scss */
+.testimonials .t-list h5 {
+  margin: 28px 0 32px 0;
+}
+/* line 155, ../sass/layout/_main.scss */
+.testimonials .t-list p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
 }
 
-/* mean layout main */
+/* / testimonials */
+/*
+*/
+/* line 164, ../sass/layout/_main.scss */
+.contact {
+  background-color: #34495e;
+}
+/* line 168, ../sass/layout/_main.scss */
+.contact .center-wrapper {
+  padding: 110px 0 117px 0;
+}
+
+/* line 174, ../sass/layout/_main.scss */
+.contact-info {
+  float: left;
+  width: 460px;
+  color: #fff;
+  /* / edit "p" element */
+}
+/* line 182, ../sass/layout/_main.scss */
+.contact-info h5 {
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+/* line 188, ../sass/layout/_main.scss */
+.contact-info p:first-of-type {
+  margin-bottom: 45px;
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
+}
+/* line 193, ../sass/layout/_main.scss */
+.contact-info p:not(:first-of-type) {
+  margin-bottom: 22px;
+}
+/* line 196, ../sass/layout/_main.scss */
+.contact-info p:not(:first-of-type):before {
+  content: "";
+  background: url(/img/contact.png) no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+}
+/* line 206, ../sass/layout/_main.scss */
+.contact-info p:nth-child(4):before {
+  background: url(/img/contact.png) no-repeat 0 50%;
+}
+/* line 213, ../sass/layout/_main.scss */
+.contact-info p:nth-child(5):before {
+  background: url(/img/contact.png) no-repeat 0 100%;
+}
+
+/* line 221, ../sass/layout/_main.scss */
+.contact-form {
+  float: right;
+}
+
+/* / Main */
+/*
+
+
+*/
 /* ==========================================================================
    Footer styles.
    ========================================================================== */
+/* line 5, ../sass/layout/_footer.scss */
+.footer {
+  background-color: #2c3e50;
+  padding: 74px 0 68px 0;
+}
+
+/* line 10, ../sass/layout/_footer.scss */
+.copywrite {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+/* / footer */
+/*
+
+
+*/
 /* Modules */
 /* ==========================================================================
    Button styles
@@ -478,7 +592,7 @@ li {
   background-color: #1abc9c;
   color: #fff;
   font-size: 18px;
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
   border: none;
   border-radius: 5px;
 }
@@ -492,14 +606,11 @@ li {
   background-color: #3498db;
   color: #fff;
   font-size: 18px;
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
   border: none;
   border-radius: 5px;
 }
 
-/* ==========================================================================
-   Dividers styles.
-   ========================================================================== */
 /* ==========================================================================
    Form styles.
    ========================================================================== */
@@ -507,10 +618,9 @@ li {
 .contact-form {
   position: relative;
   width: 460px;
-  outline: 2px solid red;
 }
 
-/* line 12, ../sass/modules/_forms.scss */
+/* line 11, ../sass/modules/_forms.scss */
 .contact-name,
 .contact-mail,
 .contact-subject,
@@ -523,30 +633,30 @@ li {
   padding-left: 12px;
   font-size: 13px;
   line-height: 28px;
-  font-family: "OpenSansRegular", Helvetica, Arial, sans-serif;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
   border: none;
   border-radius: 5px;
 }
 
-/* line 29, ../sass/modules/_forms.scss */
+/* line 28, ../sass/modules/_forms.scss */
 .contact-name,
 .contact-mail {
   display: inline-block;
   width: 220px;
 }
 
-/* line 35, ../sass/modules/_forms.scss */
+/* line 34, ../sass/modules/_forms.scss */
 .contact-mail {
   float: right;
 }
 
-/* line 42, ../sass/modules/_forms.scss */
+/* line 41, ../sass/modules/_forms.scss */
 .contact-subject {
   width: 460px;
   position: relative;
 }
 
-/* line 47, ../sass/modules/_forms.scss */
+/* line 46, ../sass/modules/_forms.scss */
 .icons-btn-choose {
   width: 37px;
   height: 32px;
@@ -555,36 +665,26 @@ li {
   top: 63px;
 }
 
-/* line 55, ../sass/modules/_forms.scss */
+/* line 54, ../sass/modules/_forms.scss */
 .contact-message {
   width: 460px;
   height: 150px;
 }
 
-/* line 62, ../sass/modules/_forms.scss */
+/* line 61, ../sass/modules/_forms.scss */
 .contact-form .btn,
 .contact-form .btn-blue {
   float: left;
 }
-/* line 67, ../sass/modules/_forms.scss */
+/* line 66, ../sass/modules/_forms.scss */
 .contact-form .btn-blue {
   float: right;
 }
-/* line 71, ../sass/modules/_forms.scss */
+/* line 70, ../sass/modules/_forms.scss */
 .contact-form .btn {
   margin-left: 100px;
 }
 
-/* ==========================================================================
-   Table styles.
-   ========================================================================== */
-/* ==========================================================================
-   Other styles.
-   ========================================================================== */
-/* Theme */
-/* ==========================================================================
-   Theme styles.
-   ========================================================================== */
 /*
 Add Opensans Light 
 Fix bug with header resize bg

@@ -5,8 +5,8 @@
 /* Typograthy */
 $base-font-size: 14px;
 $base-line-height: 18px;
-$font-main: "OpenSansRegular", Helvetica, Arial, sans-serif;
-$font-logo: "Bles","OpenSansRegular", sans-serif ;
+$font-main: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
+$font-main-light: "OpenSansLight", "OpenSansRegular", sans-serif;
 
 
 /* Colors */
@@ -20,6 +20,7 @@ $color-blue: #3498db;
 /* Colors for bg */
 $color-bg1: #34495e;
 $color-bg2: #f7f7f7;
+$color-footer: #2c3e50;
 /**/
 $color-form: #5d6d7e;
 
@@ -44,7 +45,6 @@ $color-form: #5d6d7e;
   
   margin: 0 auto;
   width: 940px;
-  outline: 1px dashed red;
 }
 
 

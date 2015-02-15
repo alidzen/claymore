@@ -18,20 +18,14 @@
 
 
 /* Layout */
-@import "layout/_header.scss";
 @import "layout/_nav.scss";
+@import "layout/_header.scss";
 @import "layout/_main.scss";
 @import "layout/_footer.scss";
 
 /* Modules */
 @import "modules/_btn.scss";
-@import "modules/_dividers.scss";
 @import "modules/_forms.scss";
-@import "modules/_tables.scss";
-@import "modules/_other.scss";
-
-/* Theme */
-@import "theme/_theme.scss";
 
 /*
 Add Opensans Light 
