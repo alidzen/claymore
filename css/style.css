@@ -10,7 +10,6 @@
 /**/
 /* Positioning */
 /* Clearfix */
-/* line 34, ../sass/utilities/_settings.scss */
 .clearfix:after, .center-wrapper:after, .nav .nav:after, .logo:after, .header-propose:after, .header-propose img:after, .about-us:after, .testimonials .t-list:after, .contact-info:after, .contact-form:after, .contact-mail:after, .clearfix:before, .center-wrapper:before, .nav .nav:before, .logo:before, .header-propose:before, .header-propose img:before, .about-us:before, .testimonials .t-list:before, .contact-info:before, .contact-form:before, .contact-mail:before {
   content: "";
   clear: both;
@@ -18,7 +17,6 @@
 }
 
 /* Center Wrapper */
-/* line 43, ../sass/utilities/_settings.scss */
 .center-wrapper {
   margin: 0 auto;
   width: 940px;
@@ -28,48 +26,39 @@
    Utilities.
    ========================================================================== */
 /* Create sprites */
-/* line 96, icons/*.png */
 .icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-logo, .icons-responsive, .icons-statistic {
   background-image: url("../img/icons-s9485d7bfd9.png");
   background-repeat: no-repeat;
 }
 
-/* line 84, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-browser {
   background-position: 0 0;
 }
 
-/* line 84, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-btn-choose {
   background-position: 0 -85px;
 }
 
-/* line 84, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-face {
   background-position: 0 -117px;
 }
 
-/* line 84, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-heart {
   background-position: 0 -273px;
 }
 
-/* line 84, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-logo {
   background-position: 0 -359px;
 }
 
-/* line 84, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-responsive {
   background-position: 0 -415px;
 }
 
-/* line 84, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-statistic {
   background-position: 0 -500px;
 }
 
-/* line 9, ../sass/utilities/_utilities.scss */
 .icons-heart,
 .icons-responsive,
 .icons-browser {
@@ -78,14 +67,12 @@
   width: 99px;
 }
 
-/* line 17, ../sass/utilities/_utilities.scss */
 .icons-face {
   display: block;
   width: 142px;
   height: 156px;
 }
 
-/* line 23, ../sass/utilities/_utilities.scss */
 .icons-statistic {
   width: 238px;
   height: 144px;
@@ -94,7 +81,6 @@
 /* Bootstrap or another */
 /* I Used Susy */
 /* Base */
-/* line 5, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -116,45 +102,37 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../home/denis/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -162,7 +140,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* ==========================================================================
    Base styles.
    ========================================================================== */
-/* line 4, ../sass/base/_base.scss */
 body {
   width: 1500px;
   margin: 0 auto;
@@ -172,7 +149,6 @@ body {
   color: #34495e;
 }
 
-/* line 14, ../sass/base/_base.scss */
 h1 {
   font-size: 72px;
   line-height: 30px;
@@ -180,7 +156,6 @@ h1 {
 
 /* h1 - use only for logo */
 /* Use in header-propose and feateres */
-/* line 21, ../sass/base/_base.scss */
 h2 {
   font-size: 30px;
   line-height: 30px;
@@ -188,49 +163,41 @@ h2 {
 }
 
 /* Use in sec. About us */
-/* line 28, ../sass/base/_base.scss */
 h3 {
   font-size: 24px;
   line-height: 24px;
 }
 
 /* Use in sec. service */
-/* line 34, ../sass/base/_base.scss */
 h4 {
   font-size: 20px;
   line-height: 24px;
 }
 
 /* Use in sec. Testimonials*/
-/* line 40, ../sass/base/_base.scss */
 h5 {
   font-size: 24px;
   line-height: 30px;
 }
 
-/* line 45, ../sass/base/_base.scss */
 h6 {
   font-size: 48px;
   line-height: 30px;
 }
 
-/* line 50, ../sass/base/_base.scss */
 a {
   font-size: 18px;
   line-height: 30px;
   text-decoration: none;
 }
-/* line 55, ../sass/base/_base.scss */
 a:active {
   color: #fff;
 }
 
-/* line 60, ../sass/base/_base.scss */
 li {
   text-decoration: none;
 }
 
-/* line 64, ../sass/base/_base.scss */
 p {
   font-weight: 300;
 }
@@ -258,20 +225,16 @@ p {
 /* ==========================================================================
    Navigation styles.
    ========================================================================== */
-/* line 6, ../sass/layout/_nav.scss */
 .nav li {
   display: inline-block;
 }
-/* line 9, ../sass/layout/_nav.scss */
 .nav li a {
   padding: 10px;
   color: #fff;
 }
-/* line 14, ../sass/layout/_nav.scss */
 .nav li:last-of-type {
   font-weight: bold;
 }
-/* line 23, ../sass/layout/_nav.scss */
 .nav li:first-of-type {
   border-bottom: 3px solid #1abc9c;
 }
@@ -280,20 +243,17 @@ p {
 /* ==========================================================================
    Header styles
    ========================================================================== */
-/* line 5, ../sass/layout/_header.scss */
 .header {
   background: url(../img/header-bg.jpg) no-repeat;
   background-size: cover;
   height: 877px;
 }
 
-/* line 11, ../sass/layout/_header.scss */
 .nav {
   float: right;
   margin-top: 90px;
 }
 
-/* line 17, ../sass/layout/_header.scss */
 .logo {
   float: left;
   width: 154px;
@@ -303,41 +263,34 @@ p {
 }
 
 /* / logo */
-/* line 30, ../sass/layout/_header.scss */
 .header-propose {
   margin-top: 190px;
 }
-/* line 35, ../sass/layout/_header.scss */
 .header-propose img {
   float: left;
   margin-right: 41px;
 }
-/* line 47, ../sass/layout/_header.scss */
 .header-propose .header-propose-text {
   margin-top: 58px;
   color: #fff;
 }
-/* line 51, ../sass/layout/_header.scss */
 .header-propose .header-propose-text h2 {
   margin-bottom: 42px;
 }
-/* line 55, ../sass/layout/_header.scss */
 .header-propose .header-propose-text p {
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
   font-size: 18px;
   line-height: 30px;
 }
-/* line 61, ../sass/layout/_header.scss */
 .header-propose .header-propose-text .propose-list {
   margin-top: 65px;
 }
-/* line 64, ../sass/layout/_header.scss */
 .header-propose .header-propose-text .propose-list li {
   display: inline-block;
 }
-/* line 70, ../sass/layout/_header.scss */
 .header-propose .header-propose-text .propose-list-choice {
   position: relative;
+  top: -20px;
   background-color: #fff;
   color: #34495e;
   border-radius: 50%;
@@ -352,11 +305,9 @@ p {
 /* ==========================================================================
    Main styles
    ========================================================================== */
-/* line 8, ../sass/layout/_main.scss */
 .about-us {
   margin-top: 112px;
 }
-/* line 13, ../sass/layout/_main.scss */
 .about-us p {
   float: left;
   width: 604px;
@@ -364,7 +315,6 @@ p {
   font-size: 18px;
   line-height: 30px;
 }
-/* line 21, ../sass/layout/_main.scss */
 .about-us .icons-statistic {
   margin-top: -20px;
   float: right;
@@ -373,35 +323,28 @@ p {
 /* / about-us */
 /*
 */
-/* line 31, ../sass/layout/_main.scss */
 .service {
   margin-top: 128px;
   background-color: #f7f7f7;
   opacity: 50%;
 }
-/* line 37, ../sass/layout/_main.scss */
 .service .center-wrapper {
   padding: 75px 0 98px 0;
 }
-/* line 43, ../sass/layout/_main.scss */
 .service .service-item {
-  width: 298px;
+  width: 290px;
   display: inline-block;
   text-align: center;
 }
-/* line 48, ../sass/layout/_main.scss */
 .service .service-item div {
   margin: 0 auto;
 }
-/* line 52, ../sass/layout/_main.scss */
 .service .service-item h4 {
   margin: 29px 0 23px;
 }
-/* line 56, ../sass/layout/_main.scss */
 .service .service-item:not(:first-of-type) {
   margin-left: 18px;
 }
-/* line 60, ../sass/layout/_main.scss */
 .service .service-item p {
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
   font-size: 14px;
@@ -411,7 +354,6 @@ p {
 /* / service */
 /*
 */
-/* line 72, ../sass/layout/_main.scss */
 .features {
   position: relative;
   background: url(../img/main-bg.jpg) no-repeat;
@@ -421,7 +363,6 @@ p {
   /* add slider arrows */
   /* positioning right arrow*/
 }
-/* line 79, ../sass/layout/_main.scss */
 .features:before, .features:after {
   content: "";
   position: absolute;
@@ -431,25 +372,20 @@ p {
   height: 84px;
   width: 49px;
 }
-/* line 90, ../sass/layout/_main.scss */
 .features:before {
   left: 285px;
 }
-/* line 94, ../sass/layout/_main.scss */
 .features:after {
   right: 275px;
   background-position: 100% 0;
 }
-/* line 100, ../sass/layout/_main.scss */
 .features h2 {
   margin: 62px 0 9px 0;
 }
-/* line 104, ../sass/layout/_main.scss */
 .features p {
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
 }
 
-/* line 110, ../sass/layout/_main.scss */
 .features-laptop {
   position: relative;
   padding-top: 100px;
@@ -458,38 +394,30 @@ p {
 /* / features*/
 /*
 */
-/* line 119, ../sass/layout/_main.scss */
 .testimonials {
   text-align: center;
 }
-/* line 121, ../sass/layout/_main.scss */
 .testimonials .center-wrapper {
   margin-bottom: 136px;
 }
-/* line 127, ../sass/layout/_main.scss */
 .testimonials h6 {
   margin-bottom: 69px;
   margin-top: 58px;
 }
-/* line 132, ../sass/layout/_main.scss */
 .testimonials .t-list {
   display: inline-block;
   width: 450px;
 }
-/* line 138, ../sass/layout/_main.scss */
 .testimonials .t-list:nth-child(2n) {
   margin-left: 32px;
 }
-/* line 142, ../sass/layout/_main.scss */
 .testimonials .t-list div {
   float: left;
   margin-right: 20px;
 }
-/* line 147, ../sass/layout/_main.scss */
 .testimonials .t-list h5 {
   margin: 28px 0 32px 0;
 }
-/* line 151, ../sass/layout/_main.scss */
 .testimonials .t-list p {
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
 }
@@ -497,37 +425,30 @@ p {
 /* / testimonials */
 /*
 */
-/* line 160, ../sass/layout/_main.scss */
 .contact {
   background-color: #34495e;
 }
-/* line 164, ../sass/layout/_main.scss */
 .contact .center-wrapper {
   padding: 110px 0 117px 0;
 }
 
-/* line 170, ../sass/layout/_main.scss */
 .contact-info {
   float: left;
   width: 460px;
   color: #fff;
   /* / edit "p" element */
 }
-/* line 178, ../sass/layout/_main.scss */
 .contact-info h5 {
   line-height: 28px;
   margin-bottom: 23px;
 }
-/* line 184, ../sass/layout/_main.scss */
 .contact-info p:first-of-type {
   margin-bottom: 45px;
   font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
 }
-/* line 189, ../sass/layout/_main.scss */
 .contact-info p:not(:first-of-type) {
   margin-bottom: 22px;
 }
-/* line 192, ../sass/layout/_main.scss */
 .contact-info p:not(:first-of-type):before {
   content: "";
   background: url(../img/contact.png) no-repeat;
@@ -535,16 +456,13 @@ p {
   width: 25px;
   height: 20px;
 }
-/* line 202, ../sass/layout/_main.scss */
 .contact-info p:nth-child(4):before {
   background: url(../img/contact.png) no-repeat 0 50%;
 }
-/* line 209, ../sass/layout/_main.scss */
 .contact-info p:nth-child(5):before {
   background: url(../img/contact.png) no-repeat 0 100%;
 }
 
-/* line 217, ../sass/layout/_main.scss */
 .contact-form {
   float: right;
 }
@@ -557,13 +475,11 @@ p {
 /* ==========================================================================
    Footer styles.
    ========================================================================== */
-/* line 5, ../sass/layout/_footer.scss */
 .footer {
   background-color: #2c3e50;
   padding: 74px 0 68px 0;
 }
 
-/* line 10, ../sass/layout/_footer.scss */
 .copywrite {
   display: block;
   text-align: center;
@@ -579,7 +495,6 @@ p {
 /* ==========================================================================
    Button styles
    ========================================================================== */
-/* line 5, ../sass/modules/_btn.scss */
 .btn {
   display: block;
   box-sizing: border-box;
@@ -593,7 +508,6 @@ p {
   border-radius: 5px;
 }
 
-/* line 22, ../sass/modules/_btn.scss */
 .btn-blue {
   display: block;
   box-sizing: border-box;
@@ -610,13 +524,11 @@ p {
 /* ==========================================================================
    Form styles.
    ========================================================================== */
-/* line 4, ../sass/modules/_forms.scss */
 .contact-form {
   position: relative;
   width: 460px;
 }
 
-/* line 11, ../sass/modules/_forms.scss */
 .contact-name,
 .contact-mail,
 .contact-subject,
@@ -634,25 +546,21 @@ p {
   border-radius: 5px;
 }
 
-/* line 28, ../sass/modules/_forms.scss */
 .contact-name,
 .contact-mail {
   display: inline-block;
   width: 220px;
 }
 
-/* line 34, ../sass/modules/_forms.scss */
 .contact-mail {
   float: right;
 }
 
-/* line 41, ../sass/modules/_forms.scss */
 .contact-subject {
   width: 460px;
   position: relative;
 }
 
-/* line 46, ../sass/modules/_forms.scss */
 .icons-btn-choose {
   width: 37px;
   height: 32px;
@@ -661,22 +569,18 @@ p {
   top: 63px;
 }
 
-/* line 54, ../sass/modules/_forms.scss */
 .contact-message {
   width: 460px;
   height: 150px;
 }
 
-/* line 61, ../sass/modules/_forms.scss */
 .contact-form .btn,
 .contact-form .btn-blue {
   float: left;
 }
-/* line 66, ../sass/modules/_forms.scss */
 .contact-form .btn-blue {
   float: right;
 }
-/* line 70, ../sass/modules/_forms.scss */
 .contact-form .btn {
   margin-left: 100px;
 }
