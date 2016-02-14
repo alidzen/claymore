@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
+
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 57px;
+  background-color: $color-green;
+  color: $color-white;
+  
+  font: {
+    size: 18px;
+    family: $font-main;
+  }
+  
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-blue {
+  display: block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 57px;
+  background-color: $color-blue;
+  color: $color-white;
+  
+  font: {
+    size: 18px;
+    family: $font-main;
+  }
+  
+  border: none;
+  border-radius: 5px;
+}
+

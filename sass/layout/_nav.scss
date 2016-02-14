@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Navigation styles.
+   ========================================================================== */
+.nav {
+  
+  li {
+    display: inline-block;
+
+    a {
+      padding: 10px;
+      color:$color-white;
+    }
+    
+    &:last-of-type {
+      font-weight: bold;
+    }
+  }
+
+  .nav {
+    @extend .clearfix;
+  }
+
+  li:first-of-type {
+    border-bottom: 3px solid $color-green;
+  }
+}
+/* End nav*/

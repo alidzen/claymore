@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Form styles.
+   ========================================================================== */
+.contact-form {
+  position: relative;
+  width: 460px;
+  
+  @extend .clearfix;
+}
+
+.contact-name,
+.contact-mail,
+.contact-subject, 
+.contact-message {
+  margin-bottom: 15px;
+  color: $color-white;
+  background-color: $color-form;
+  box-sizing: border-box;
+  height: 43px;
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 28px;
+  font-family: $font-main;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-name,
+.contact-mail {
+  display: inline-block;
+  width: 220px;
+}
+
+.contact-mail {
+  float: right;
+  
+  @extend .clearfix
+    
+}
+
+.contact-subject {
+  width: 460px;
+  position: relative;
+}
+
+.icons-btn-choose {
+  width: 37px;
+  height: 32px;
+  position: absolute;
+  left: 417px;
+  top: 63px;
+}
+
+.contact-message {
+  width: 460px;
+  height: 150px;
+}
+
+.contact-form {
+  
+  .btn,
+  .btn-blue {
+    float: left;
+  }
+  
+  .btn-blue {
+    float: right;
+  }
+  
+  .btn {
+    margin-left: 100px;
+  }
+  
+}

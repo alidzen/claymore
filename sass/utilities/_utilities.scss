@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Utilities.
+   ========================================================================== */
+
+/* Create sprites */
+@import "icons/*.png";
+@include all-icons-sprites;
+
+.icons-heart,
+.icons-responsive,
+.icons-browser {
+  display: block;
+  height: 85px;
+  width: 99px;
+}
+
+.icons-face {
+  display: block;
+  width: 142px;
+  height: 156px;
+}
+
+.icons-statistic {
+  width: 238px;
+  height: 144px;
+}

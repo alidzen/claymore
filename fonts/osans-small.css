@@ -1,0 +1,44 @@
+
+
+
+@font-face {
+    font-family: 'OpenSansLightRegular';
+    src: url('opensans-light.eot');
+    src: url('opensans-light.eot?#iefix') format('embedded-opentype'),
+         url('opensans-light.woff') format('woff'),
+         url('opensans-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('opensans-regular.eot');
+    src: url('opensans-regular.eot?#iefix') format('embedded-opentype'),
+         url('opensans-regular.woff') format('woff'),
+         url('opensans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'OpenSansSemiboldRegular';
+    src: url('opensans-semibold.eot');
+    src: url('opensans-semibold.eot?#iefix') format('embedded-opentype'),
+         url('opensans-semibold.woff') format('woff'),
+         url('opensans-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+

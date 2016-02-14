@@ -1,0 +1,591 @@
+/* Compass */
+/* Utilities */
+/* ==========================================================================
+   Site settings.
+   ========================================================================== */
+/* Typograthy */
+/* Colors */
+/* Colors for buttons and border */
+/* Colors for bg */
+/**/
+/* Positioning */
+/* Clearfix */
+.clearfix:after, .center-wrapper:after, .nav .nav:after, .logo:after, .header-propose:after, .header-propose img:after, .about-us:after, .testimonials .t-list:after, .contact-info:after, .contact-form:after, .contact-mail:after, .clearfix:before, .center-wrapper:before, .nav .nav:before, .logo:before, .header-propose:before, .header-propose img:before, .about-us:before, .testimonials .t-list:before, .contact-info:before, .contact-form:before, .contact-mail:before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Center Wrapper */
+.center-wrapper {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* ==========================================================================
+   Utilities.
+   ========================================================================== */
+/* Create sprites */
+.icons-sprite, .icons-browser, .icons-btn-choose, .icons-face, .icons-heart, .icons-logo, .icons-responsive, .icons-statistic {
+  background-image: url('../img/icons-s9485d7bfd9.png');
+  background-repeat: no-repeat;
+}
+
+.icons-browser {
+  background-position: 0 0;
+}
+
+.icons-btn-choose {
+  background-position: 0 -85px;
+}
+
+.icons-face {
+  background-position: 0 -117px;
+}
+
+.icons-heart {
+  background-position: 0 -273px;
+}
+
+.icons-logo {
+  background-position: 0 -359px;
+}
+
+.icons-responsive {
+  background-position: 0 -415px;
+}
+
+.icons-statistic {
+  background-position: 0 -500px;
+}
+
+.icons-heart,
+.icons-responsive,
+.icons-browser {
+  display: block;
+  height: 85px;
+  width: 99px;
+}
+
+.icons-face {
+  display: block;
+  width: 142px;
+  height: 156px;
+}
+
+.icons-statistic {
+  width: 238px;
+  height: 144px;
+}
+
+/* Bootstrap or another */
+/* I Used Susy */
+/* Base */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* ==========================================================================
+   Base styles.
+   ========================================================================== */
+body {
+  width: 1500px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
+  color: #34495e;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 30px;
+}
+
+/* h1 - use only for logo */
+/* Use in header-propose and feateres */
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  vertical-align: baseline;
+}
+
+/* Use in sec. About us */
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+/* Use in sec. service */
+h4 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* Use in sec. Testimonials*/
+h5 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h6 {
+  font-size: 48px;
+  line-height: 30px;
+}
+
+a {
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+}
+a:active {
+  color: #fff;
+}
+
+li {
+  text-decoration: none;
+}
+
+p {
+  font-weight: 300;
+}
+
+/* ==========================================================================
+   Ie8 styles.
+   ========================================================================== */
+/* Fonts */
+@font-face {
+  /* Main fonts */
+  font-family: "OpenSansRegular";
+  src: url("/fonts/opensans-regular.eot");
+  src: url("/fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/opensans-regular.woff") format("woff"), url("/fonts/opensans-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("/fonts/open_sans_condensed_light.eot");
+  src: url("/fonts/open_sans_condensed_light.eot?#iefix") format("embedded-opentype"), url("/fonts/open_sans_condensed_light.woff") format("woff"), url("/fonts/open_sans_condensed_light.ttf") format("truetype"), url("/fonts/open_sans_condensed_light.svg#OpenSansCondensedLight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Layout */
+/* ==========================================================================
+   Navigation styles.
+   ========================================================================== */
+.nav li {
+  display: inline-block;
+}
+.nav li a {
+  padding: 10px;
+  color: #fff;
+}
+.nav li:last-of-type {
+  font-weight: bold;
+}
+.nav li:first-of-type {
+  border-bottom: 3px solid #1abc9c;
+}
+
+/* End nav*/
+/* ==========================================================================
+   Header styles
+   ========================================================================== */
+.header {
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-size: cover;
+  height: 877px;
+}
+
+.nav {
+  float: right;
+  margin-top: 90px;
+}
+
+.logo {
+  float: left;
+  width: 154px;
+  height: 55px;
+  margin-top: 67px;
+  background: url(../img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
+}
+
+/* / logo */
+.header-propose {
+  margin-top: 190px;
+}
+.header-propose img {
+  float: left;
+  margin-right: 41px;
+}
+.header-propose .header-propose-text {
+  margin-top: 58px;
+  color: #fff;
+}
+.header-propose .header-propose-text h2 {
+  margin-bottom: 42px;
+}
+.header-propose .header-propose-text p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+.header-propose .header-propose-text .propose-list {
+  margin-top: 65px;
+}
+.header-propose .header-propose-text .propose-list li {
+  display: inline-block;
+}
+.header-propose .header-propose-text .propose-list-choice {
+  position: relative;
+  top: -20px;
+  background-color: #fff;
+  color: #34495e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #fff;
+}
+
+/* / header */
+/*
+
+
+*/
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+.about-us {
+  margin-top: 112px;
+}
+.about-us p {
+  float: left;
+  width: 604px;
+  margin-top: 27px;
+  font-size: 18px;
+  line-height: 30px;
+}
+.about-us .icons-statistic {
+  margin-top: -20px;
+  float: right;
+}
+
+/* / about-us */
+/*
+*/
+.service {
+  margin-top: 128px;
+  background-color: #f7f7f7;
+  opacity: 50%;
+}
+.service .center-wrapper {
+  padding: 75px 0 98px 0;
+}
+.service .service-item {
+  width: 290px;
+  display: inline-block;
+  text-align: center;
+}
+.service .service-item div {
+  margin: 0 auto;
+}
+.service .service-item h4 {
+  margin: 29px 0 23px;
+}
+.service .service-item:not(:first-of-type) {
+  margin-left: 18px;
+}
+.service .service-item p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* / service */
+/*
+*/
+.features {
+  position: relative;
+  background: url(../img/main-bg.jpg) no-repeat;
+  background-size: 100% 510px;
+  text-align: center;
+  color: #fff;
+  /* add slider arrows */
+  /* positioning right arrow*/
+}
+.features:before, .features:after {
+  content: "";
+  position: absolute;
+  top: 259px;
+  background: url(../img/arrows.png) no-repeat 0 0;
+  display: block;
+  height: 84px;
+  width: 49px;
+}
+.features:before {
+  left: 285px;
+}
+.features:after {
+  right: 275px;
+  background-position: 100% 0;
+}
+.features h2 {
+  margin: 62px 0 9px 0;
+}
+.features p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
+}
+
+.features-laptop {
+  position: relative;
+  padding-top: 100px;
+}
+
+/* / features*/
+/*
+*/
+.testimonials {
+  text-align: center;
+}
+.testimonials .center-wrapper {
+  margin-bottom: 136px;
+}
+.testimonials h6 {
+  margin-bottom: 69px;
+  margin-top: 58px;
+}
+.testimonials .t-list {
+  display: inline-block;
+  width: 450px;
+}
+.testimonials .t-list:nth-child(2n) {
+  margin-left: 32px;
+}
+.testimonials .t-list div {
+  float: left;
+  margin-right: 20px;
+}
+.testimonials .t-list h5 {
+  margin: 28px 0 32px 0;
+}
+.testimonials .t-list p {
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
+}
+
+/* / testimonials */
+/*
+*/
+.contact {
+  background-color: #34495e;
+}
+.contact .center-wrapper {
+  padding: 110px 0 117px 0;
+}
+
+.contact-info {
+  float: left;
+  width: 460px;
+  color: #fff;
+  /* / edit "p" element */
+}
+.contact-info h5 {
+  line-height: 28px;
+  margin-bottom: 23px;
+}
+.contact-info p:first-of-type {
+  margin-bottom: 45px;
+  font-family: "OpenSansLight", "OpenSansRegular", sans-serif;
+}
+.contact-info p:not(:first-of-type) {
+  margin-bottom: 22px;
+}
+.contact-info p:not(:first-of-type):before {
+  content: "";
+  background: url(../img/contact.png) no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+}
+.contact-info p:nth-child(4):before {
+  background: url(../img/contact.png) no-repeat 0 50%;
+}
+.contact-info p:nth-child(5):before {
+  background: url(../img/contact.png) no-repeat 0 100%;
+}
+
+.contact-form {
+  float: right;
+}
+
+/* / Main */
+/*
+
+
+*/
+/* ==========================================================================
+   Footer styles.
+   ========================================================================== */
+.footer {
+  background-color: #2c3e50;
+  padding: 74px 0 68px 0;
+}
+
+.copywrite {
+  text-align: center;
+  color: #fff;
+}
+
+/* / footer */
+/*
+
+
+*/
+/* Modules */
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
+.btn {
+  display: block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 57px;
+  background-color: #1abc9c;
+  color: #fff;
+  font-size: 18px;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-blue {
+  display: block;
+  box-sizing: border-box;
+  width: 170px;
+  height: 57px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 18px;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ==========================================================================
+   Form styles.
+   ========================================================================== */
+.contact-form {
+  position: relative;
+  width: 460px;
+}
+
+.contact-name,
+.contact-mail,
+.contact-subject,
+.contact-message {
+  margin-bottom: 15px;
+  color: #fff;
+  background-color: #5d6d7e;
+  box-sizing: border-box;
+  height: 43px;
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 28px;
+  font-family: "OpenSansRegular", "Helvetica", "Arial", sans-serif;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-name,
+.contact-mail {
+  display: inline-block;
+  width: 220px;
+}
+
+.contact-mail {
+  float: right;
+}
+
+.contact-subject {
+  width: 460px;
+  position: relative;
+}
+
+.icons-btn-choose {
+  width: 37px;
+  height: 32px;
+  position: absolute;
+  left: 417px;
+  top: 63px;
+}
+
+.contact-message {
+  width: 460px;
+  height: 150px;
+}
+
+.contact-form .btn,
+.contact-form .btn-blue {
+  float: left;
+}
+.contact-form .btn-blue {
+  float: right;
+}
+.contact-form .btn {
+  margin-left: 100px;
+}
+
+/*
+Add Opensans Light 
+Fix bug with header resize bg
+
+*/

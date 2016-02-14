@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Header styles
+   ========================================================================== */
+
+.header {
+  background: url(../img/header-bg.jpg) no-repeat;
+  background-size: cover;
+  height: 877px;
+}
+
+.nav {
+  float: right;
+  margin-top: 90px;
+}
+  
+
+.logo {
+  float: left;
+  width: 154px;
+  height: 55px;
+  margin-top: 67px;
+  background: url(../img/icons-s9485d7bfd9.png) no-repeat 0 -359px;
+  
+  @extend .clearfix;
+
+}
+
+/* / logo */
+
+.header-propose {
+  margin-top: 190px;
+
+  @extend .clearfix;
+
+  img {
+    float: left;
+
+    margin-right: 41px;
+
+
+    &:before,
+    &:after {
+      @extend .clearfix;
+    }
+  }
+
+  .header-propose-text {
+    margin-top: 58px;
+    color: $color-white;
+
+    h2 {
+      margin-bottom: 42px;
+    }
+
+    p {
+      font-family: $font-main-light;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .propose-list {
+      margin-top: 65px;
+
+      li {
+        display: inline-block;
+      }
+
+    }
+
+    .propose-list-choice {
+      position: relative;
+      top: -20px;
+      background-color: #fff;
+      color: $color-dark-blue;
+      border-radius: 50%;
+      box-shadow: 0 0 0 10px #fff;
+    }
+  }
+}
+
+/* / header */
+/*
+
+
+*/
